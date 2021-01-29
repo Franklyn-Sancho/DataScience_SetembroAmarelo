@@ -1,2 +1,2 @@
-# DataScience_Titanic
-Analise de dados do titanic
+<h1 align="center"> Analisando a taxa de suicídio do mundo com DataScience <h1>
+
