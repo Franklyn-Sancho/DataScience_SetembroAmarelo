@@ -1,4 +1,4 @@
-<h1 align="center"> Analisando a taxa de suicídio do mundo com DataScience <h1>
+<h1 align="center"> Analisando a taxa de suicídio do mundo com DataScience<h1>
 
 <p align="center"><b>Não tem sido fácil analisar esses dados, não só pela parte técnica, mas principalmente pelo assunto abordado. Falar sobre suícidio não é simples, mas precisamos. A cada resultado analisado, levando da minha cadeira e tiro alguns minutos para respirar e refletir sobre o mundo que estamos construíndo.</b></p>
 
