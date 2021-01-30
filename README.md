@@ -1,6 +1,6 @@
 <h1 align="center"> Analisando a taxa de suicídio do mundo com DataScience<h1>
 
-<p align="center"><b>Não tem sido fácil analisar esses dados, não só pela parte técnica, mas principalmente pelo assunto abordado. Falar sobre suícidio não é simples, mas precisamos. A cada resultado analisado, levando da minha cadeira e tiro alguns minutos para respirar e refletir sobre o mundo que estamos construíndo.</b></p>
+<h5 align="center">Não tem sido fácil analisar esses dados, não só pela parte técnica, mas principalmente pelo assunto abordado. Falar sobre suícidio não é simples, mas precisamos. A cada resultado analisado, levando da minha cadeira e tiro alguns minutos para respirar e refletir sobre o mundo que estamos construíndo.</h5>
 
 **1 - Ferramentas usadas nesta análise**
 * Eu fiz pelo Google Colab, por uma questão de simplicidade. Não precisa instalar absolutamente nada. 
