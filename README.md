@@ -56,16 +56,37 @@ id   |country  |   year |  ... | gdp_per_capita ($) | generation    |
 
 
 
+
+
 **3.2 - Analisando as taxas entre 1985 a 2016**<br>
 
+Antes de prosseguir, vamos criar um outro DataSet apenas com os dados do Brasil. Isso será bem interessante, já que poderemos fazer comparações entre os números totais no mundo e do Brasil. Lembrando que pelas informações que temos em mãos, podemos obter diversos tipos de informações. Sem mais delongas, vamos prosseguir aqui com as nossas funções. 
 
 ```python
-years = dados_brasil.year.unique()
-suicides_brasil_mean = dados_brasil.groupby('year')['suicides/100k pop'].mean()
+dados_brasil = NossosDados[NossosDados.country == "Brazil"].copy() 
+# Aqui criamos um Dataset apenas com os valores relacionados ao Brasil
+```
+Agora que temos os dois datasets em mãos, podemos continuar. Para começar, vamos analisar as taxas mundiais entre 1985 até 2016. Para facilitar a nossa visualização, vamos plotar o nosso lindo gráfico em linha. Como pretendemos comparar com as taxas brasileiras, podemos deixar na função e deṕois só chamar
+
+```python
+anos = dados_brasil.year.unique()
 suicides_world_mean = dados.groupby('year')['suicides/100k pop'].mean()
-ax = sns.lineplot(x=years, y = suicides_world_mean, label='mundo')
+
+ax = sns.lineplot(x=anos, y = suicides_world_mean, label='mundo')
 ```
 
 
 <img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/LineYellow.jpg">
-O pico foi em 1995 (Vamos analisar as possíveis causas)
+O pico foi em 1995 (Vamos analisar as possíveis causas). 
+
+**Comparando a taxa brasileira e mundial temos**
+```python
+anos = dados_brasil.year.unique()
+suicides_brasil_mean = dados_brasil.groupby('year')['suicides/100k pop'].mean()
+suicides_world_mean = dados.groupby('year')['suicides/100k pop'].mean()
+
+ax = sns.lineplot(x=anos, y = suicides_world_mean, label='mundo')
+ax = sns.lineplot(x=anos, y = suicides_brasil_mean, label = 'brasil')
+```
+
+<img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/MundoBrasil.jpg">
