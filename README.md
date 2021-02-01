@@ -23,12 +23,12 @@ NossosDados = pd.read_csv('https://raw.githubusercontent.com/carlosfab/data_scie
 ```
 Primeiro importamos as nossas bibliotecas de análise: Pandas, matplotlib, numpy, seaborn; depois damos um nome para o nosso Dataset (o que desejar. Eu, por exemplo, chamei de "NossosDados"). Invocamos o Pandas, modo leitura, o tipo de arquivo (CSV) e o link do CSV. A fonte Dataset é o banco mundial e a organização das nações unidas. Quero reforçar que muito além de analisar gráficos, números e tabelas, estamos aqui para compreender os resultados. Como cientistas de dados, entendemos o problema e encontramos soluções
 
-**3 - Vamos iniciar a jornada**
+## 3 - Vamos iniciar a jornada**
 
 **3.1 - Entendo as variáveis**
 * country: 101 países no total
 * year: Entre 1985 até 2016
-* sex: Masculino e Feminino (baseado no registro
+* sex: Masculino e Feminino (baseado no Dataset)
 * age: 5-14 anos | 15-24 anos | 25-34 anos | 35-54 anos | 55-74 anos | 75+ anos
 * suicides_no: Numero total de suícidio
 * population: população
@@ -38,16 +38,34 @@ Primeiro importamos as nossas bibliotecas de análise: Pandas, matplotlib, numpy
 * gdp_for_year: PIB para o ano
 * gdp_per_capita: PIB per capita 
 
+**3.2 - Enxengando o nosso Dataset**
 
-
-
-**3.2 - Vamos analisar agora como estão os números entre os anos de 1985 até 2016**<br>
-
-Para isso, vamos chamar o nosso clássico histograma. 
 ```python
-dados.hist('year')
+print(NossosDados.head())
 ```
-<b>Teremos o seguinte dado ao executar essa função:</b>
+Será chamado os 5 primeiros registros do nosso dataset
 
-<img src="https://github.com/Franklyn-Sancho/DataScience_Titanic/blob/main/Anos.jpg">
-Podemos ver, que infelizmente, os números só aumentaram. Apesar de correto, este gráfico não está tão preciso quanto aos resultados. Mas conforme prosseguimos, será ainda mais claro e preciso. 
+id   |country  |   year |  ... | gdp_per_capita ($) | generation    |
+-----|---------|--------|------|--------------------|---------------|
+0    | Albania |  1987  |  ... |          796       |Generation X   |
+1    | Albania |  1987  |  ... |          796       |   Silent      |
+2    | Albania |  1987  |  ... |          796       |Generation X   |
+3    | Albania |  1987  |  ... |          796       |G.I. Generation|
+4    | Albania |  1987  |  ... |          796       |   Boomers|
+
+
+
+
+**3.2 - Analisando as taxas entre 1985 a 2016**<br>
+
+
+```python
+years = dados_brasil.year.unique()
+suicides_brasil_mean = dados_brasil.groupby('year')['suicides/100k pop'].mean()
+suicides_world_mean = dados.groupby('year')['suicides/100k pop'].mean()
+ax = sns.lineplot(x=years, y = suicides_world_mean, label='mundo')
+```
+
+
+<img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/LineYellow.jpg">
+O pico foi em 1995 (Vamos analisar as possíveis causas)
