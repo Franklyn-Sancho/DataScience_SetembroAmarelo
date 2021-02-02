@@ -91,4 +91,4 @@ ax = sns.lineplot(x=anos, y = suicides_brasil_mean, label = 'brasil')
 
 <img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/MundoBrasil.jpg">
 
-Houve um aumento exponencial em 1993, chegando ao pico em 1997, mais ou menos. Após este pico, permaneceu em queda até os anos 2000. Até 2014 temos um gráfico que lembra uma função seno, crescendo novamente em 2015
+Comparando os resultados, enquanto a taxa mundial tem caído após o pico em 1995, no Brasil, a taxa só começa a cair em 1997 mais ou menos. Logo após os anos 2000 temos um gráfico que lembra muito uma função seno, crescendo lentamente de 2005 até 2014, quando explode em 2015. Vemos que o Brasil enfrenta um grande problema, já que as taxas tem aumentado gradativamente, diferente das taxas mundiais, que tem diminuído. Lembrando que estamos falando sobre suícidio, então qualquer caso é uma tragédia. 
