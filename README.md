@@ -91,4 +91,4 @@ ax = sns.lineplot(x=anos, y = suicides_brasil_mean, label = 'brasil')
 
 <img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/MundoBrasil.jpg">
 
-As taxas brasileiras tem aumentado a cada ano que passa. Tivemos um aumento exponencial em 1993, chegando a um pico em 1997 mais ou menos. Nos anos 2000 teve uma queda e permaneceu numa função seno, talvez estável, até 2014, quando voltou a crescer.
+houve um aumento exponencial em 1993, chegando ao pico em 1997, mais ou menos. Após este pico, permaneceu em queda até os anos 2000. Até 2014 temos um gráfico que lembra uma função seno, crescendo novamente em 2015
