@@ -91,4 +91,4 @@ ax = sns.lineplot(x=anos, y = suicides_brasil_mean, label = 'brasil')
 
 <img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/MundoBrasil.jpg">
 
-houve um aumento exponencial em 1993, chegando ao pico em 1997, mais ou menos. Após este pico, permaneceu em queda até os anos 2000. Até 2014 temos um gráfico que lembra uma função seno, crescendo novamente em 2015
+Houve um aumento exponencial em 1993, chegando ao pico em 1997, mais ou menos. Após este pico, permaneceu em queda até os anos 2000. Até 2014 temos um gráfico que lembra uma função seno, crescendo novamente em 2015
