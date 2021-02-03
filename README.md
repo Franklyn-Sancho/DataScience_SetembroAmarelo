@@ -58,7 +58,7 @@ id   |country  |   year |  ... | gdp_per_capita ($) | generation    |
 
 
 
-**3.2 - Analisando as taxas entre 1985 a 2016**<br>
+**3.3 - Analisando as taxas entre 1985 a 2016**<br>
 
 Antes de prosseguir, vamos criar um outro DataSet apenas com os dados do Brasil. Isso será bem interessante, já que poderemos fazer comparações entre os números totais no mundo e do Brasil. Lembrando que pelas informações que temos em mãos, podemos obter diversos tipos de informações. Sem mais delongas, vamos prosseguir aqui com as nossas funções. 
 
@@ -79,7 +79,7 @@ ax = sns.lineplot(x=anos, y = suicides_world_mean, label='mundo')
 <img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/LineYellow.jpg">
 O pico foi em 1995 (Vamos analisar as possíveis causas). 
 
-**Comparando a taxa brasileira e mundial temos**
+**3.4 - Comparando a taxa brasileira e mundial temos**
 ```python
 anos = dados_brasil.year.unique()
 suicides_brasil_mean = dados_brasil.groupby('year')['suicides/100k pop'].mean()
@@ -92,3 +92,7 @@ ax = sns.lineplot(x=anos, y = suicides_brasil_mean, label = 'brasil')
 <img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/MundoBrasil.jpg">
 
 Comparando os resultados, enquanto a taxa mundial tem caído após o pico em 1995, no Brasil, a taxa só começa a cair em 1997 mais ou menos. Logo após os anos 2000 temos um gráfico que lembra muito uma função seno, crescendo lentamente de 2005 até 2014, quando explode em 2015. Vemos que o Brasil enfrenta um grande problema, já que as taxas tem aumentado gradativamente, diferente das taxas mundiais, que tem diminuído. Lembrando que estamos falando sobre suícidio, então qualquer caso é uma tragédia. 
+
+**3.5 - As taxas, os anos e as idades.**
+
+<img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/TaxaFaixaIdade.jpg">
