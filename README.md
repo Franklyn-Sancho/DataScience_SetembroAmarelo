@@ -96,3 +96,5 @@ Comparando os resultados, enquanto a taxa mundial tem caído após o pico em 199
 **3.5 - As taxas, os anos e as idades.**
 
 <img src="https://github.com/Franklyn-Sancho/DataScience_SetembroAmarelo/blob/main/TaxaFaixaIdade.jpg">
+
+continua... 
