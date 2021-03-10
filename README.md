@@ -3,14 +3,15 @@
 <h5 align="center">Não tem sido fácil analisar esses dados, não só pela parte técnica, mas principalmente pelo assunto abordado. Falar sobre suícidio não é simples, mas precisamos. A cada resultado analisado, levanto da minha cadeira e tiro alguns minutos para respirar e refletir sobre o mundo que estamos construíndo.</h5>
 
 ### 1 - Ferramentas usadas nesta análise**
-* Eu fiz pelo Google Colab, por uma questão de simplicidade. Não precisa instalar absolutamente nada. 
-* Mas caso você queeira trabalhar diretamente no pc. Lá vamos: 
-* Python
-* Pandas
-* Matplotlib
-* seaborn
-* numpy
-* Anaconda e Jupyter também seria uma ótima opção. 
+
+
+![Badge](https://img.shields.io/static/v1?label=Python&message=Language&color=blue&style=for-the-badge&logo=Python)
+![Badge](https://img.shields.io/static/v1?label=Pandas&message=Library&color=darkblue&style=for-the-badge&logo=pandas)
+![Badge](https://img.shields.io/static/v1?label=Matplotlib&message=Library&color=black&style=for-the-badge&logo=matplotlib)
+![Badge](https://img.shields.io/static/v1?label=Seaborn&message=Library&color=blue&style=for-the-badge&logo=seaborn)
+![Badge](https://img.shields.io/static/v1?label=numpy&message=library&color=red&style=for-the-badge&logo=numpy)
+
+* Obs: Você pode usar o Google Colab, Jupyter, Kaggle, Hydrogen do Atom ou até mesmo as extensões do VSCODE
 
 ### 2 - Importanto as ferramentas e preparando o ambiente inicial**
 ```python
